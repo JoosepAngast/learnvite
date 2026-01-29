@@ -5,15 +5,17 @@
   "private": true,
   "scripts": {
     "dev": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "deploy": "bun run build && surge ./dist kaspariscool.surge.sh"
   },
   "devDependencies": {
     "@types/bun": "latest",
     "@vituum/vite-plugin-nunjucks": "^1.1.0",
     "bulma": "^1.0.4",
     "nunjucks": "^3.2.4",
-    "sass-embedded": "^1.97.2",
-    "vite": "^7.3.1",
+    "sass-embedded": "^1.97.0",
+    "surge": "^0.24.6",
+    "vite": "^7.3.0",
     "vituum": "^1.2.0"
   },
   "peerDependencies": {
